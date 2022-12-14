@@ -69,7 +69,8 @@ if __name__ == "__main__":
                                                   " given XPath query and write them to output files.")
     cparser.add_argument("din", help="Directory that contains XML files with Alpino parses in them."
                                      " All XML files in this directory will be queried against.")
-    cparser.add_argument("dout", help="Output directory to write results to, one per input file.")
+    cparser.add_argument("dout", help="Directory to write results to. Will create one file per input file in "
+                                      " this directory.")
     cparser.add_argument("xpath", help="XPath query to use. Can be a string or a path to a file. In case of a file, "
                                        " its contents will be used as an XPath query")
 
